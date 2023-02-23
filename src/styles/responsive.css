@@ -1,0 +1,118 @@
+@media screen and (max-width : 499px) {
+  .app-bar {
+    min-width: 44px;
+    min-height: 44px;
+  }
+ 
+  .app-bar .app-bar__brand h1 {
+    min-width: 44px;
+    min-height: 44px;
+  }
+ 
+  .app-bar .app-bar__menu #hamburgerButton{
+    width: 44px;
+    height: 44px;
+  }
+ 
+  .app-bar .app-bar__navigation open a{
+    min-width: 44px;
+    min-height: 44px;
+  }
+ 
+  .app-bar .app-bar__navigation ul li {
+    min-width: 44px;
+    min-height: 44px;
+  }
+ 
+  .app-bar .app-bar__navigation ul li a {
+    min-width: 44px;
+    min-height: 44px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .app-bar {
+    grid-template-columns: 1fr auto;
+    padding: 8px 32px;
+    min-width: 44px;
+    min-height: 44px;
+  }
+ 
+  .app-bar .app-bar__brand h1 {
+    font-size: 1.5em;
+    min-width: 44px;
+    min-height: 44px;
+  }
+ 
+  .app-bar .app-bar__menu {
+    display: none;
+    min-width: 44px;
+    min-height: 44px;
+  }
+ 
+  .app-bar .app-bar__navigation {
+    position: static;
+    width: 100%;
+    min-width: 44px;
+    min-height: 44px;
+  }
+ 
+  .app-bar .app-bar__navigation ul li {
+    display: inline-block;
+    min-width: 44px;
+    min-height: 44px;
+  }
+ 
+  .app-bar .app-bar__navigation ul li a {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    margin: 0;
+    min-width: 44px;
+    min-height: 44px;
+  }
+ 
+  #resto-list, #resto-lists{
+    grid-template-columns: 1fr 1fr;
+  }
+ 
+  #resto-list, #resto-lists {
+    grid-template-columns: auto 1fr;
+  }
+ 
+  #resto-list, #resto-lists .food__name {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+ 
+  #resto-list, #resto-lists .food__overview {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+ 
+@media screen and (min-width: 800px) {
+  .app-bar .app-bar__brand h1 {
+    font-size: 2em;
+    min-width: 44px;
+    min-height: 44px;
+  }
+}
+ 
+@media screen and (min-width: 760px) {
+  #resto-list, #resto-lists {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+ 
+@media screen and (min-width: 1200px) {
+  #resto-list, #resto-lists {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+ 
+@media screen and (min-width: 1600px) {
+  #resto-list, #resto-lists {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
